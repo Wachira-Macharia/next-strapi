@@ -9,9 +9,8 @@ async function loader(slug: string) {
 }
 
 interface PageProps {
-  params: Promise<{ slug: string }>
+  params: Promise<{ slug: string }>;
 }
-
 
 export default async function DynamicPageRoute({ params }: PageProps) {
   const slug = (await params).slug;

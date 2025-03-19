@@ -39,7 +39,6 @@ export async function getHomePage() {
   const path = "/api/home-page";
   const url = new URL(path, BASE_URL);
   url.search = homePageQuery;
-
   return await fetchAPI(url.href, { method: "GET" });
 }
 
